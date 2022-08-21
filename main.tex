@@ -2,21 +2,26 @@
 \usepackage[utf8]{inputenc}
 \usepackage[default]{sourcecodepro}
 \usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
 
 \usepackage{sourcecodepro}
-\usepackage{listings}
+\usepackage{amsmath}  % for \hookrightarrow
+\usepackage{xcolor}   % for \textcolor
+
+\include{setup-listings}
 
 \title{JQL (Jira Query Language) by example}
 \author{Santiago Lizardo}
 \date{\today}
 
 \begin{document}
+
 \maketitle
 
-\newpage
+\tableofcontents
 
-\begin{lstlisting}[]
-project = RECONMAP
-\end{lstlisting}
+\include{section-user-related-queries}
+\include{section-date-related-queries}
+\include{section-references}
 
 \end{document}

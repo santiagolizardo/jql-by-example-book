@@ -1,0 +1,10 @@
+\newpage
+\section{Date related queries}
+
+\subsection{Changes between dates}
+
+\subsubsection*{List tickets transitioned to an status 2 days ago and still remain in that status.}
+
+\begin{lstlisting}[]
+    status CHANGED TO "In peer review" BEFORE -2D AND NOT status CHANGED AFTER -2d AND status = "In peer review"
+\end{lstlisting}

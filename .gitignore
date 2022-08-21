@@ -1,3 +1,9 @@
 tags
 *.log
 *.gz
+*.aux
+*.fls
+*.toc
+*.out
+*.pdf
+*.fdb_latexmk
