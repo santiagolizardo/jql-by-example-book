@@ -17,6 +17,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            main.pdf
+            JQL-by-example-book.pdf
             LICENSE
 
