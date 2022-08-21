@@ -6,3 +6,19 @@
     breaklines=true,
     postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
 }
+
+\lstdefinelanguage{jql}{
+    sensitive = false,
+    keywords={currentUser},
+    otherkeywords={>, <, ==},
+    keywords = [2]{and,or,not,order,by,asc,desc,changed,to,before,after},
+    keywordstyle=\color{orange},
+    keywordstyle=[2]\color{blue},
+    showstringspaces=false,
+    stringstyle=\color{red}\ttfamily,
+    morestring=[b]',
+    morestring=[b]",
+    stepnumber=1,
+    numbers=left,
+    numberstyle=\scriptsize,
+}
