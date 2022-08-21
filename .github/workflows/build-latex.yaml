@@ -12,10 +12,12 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
+          args: -jobname=JQL-by-example-book
           root_file: main.tex
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          fail_on_unmatched_files: true
           files: |
             JQL-by-example-book.pdf
             LICENSE
