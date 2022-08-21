@@ -10,3 +10,21 @@
     reporter = currentUser() ORDER BY created DESC
 \end{lstlisting}
 \end{small}
+
+\subsubsection*{List tickets assigned to somebody in a Jira team called "qa-team"}
+
+\begin{small}
+    \begin{lstlisting}[language=jql]
+        assignee IN membersOf("qa-team")
+    \end{lstlisting}
+\end{small}
+
+\subsubsection*{List tickets updated by user within the last 8 hours}
+
+\begin{small}
+    \begin{lstlisting}[language=jql]
+        issue IN updatedBy("santiago.lizardo", -8h)
+    \end{lstlisting}
+\end{small}
+
+ 
