@@ -12,7 +12,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          args: -jobname=JQL-by-example-book
+          args: -jobname=JQL-by-example-book -output-format=pdf
           root_file: main.tex
       - name: Release
         uses: softprops/action-gh-release@v1
