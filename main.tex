@@ -7,6 +7,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[default]{sourcecodepro}
 \usepackage[T1]{fontenc}
+\usepackage{imakeidx}
+\makeindex[intoc]
+
+\usepackage[dvipsnames]{xcolor}   % for \textcolor
 
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
@@ -16,20 +20,21 @@
 \urlstyle{same}
 
 \usepackage{sourcecodepro}
-\usepackage{amsmath}  % for \hookrightarrow
-\usepackage{xcolor}   % for \textcolor
+\usepackage{amsmath}  % for \hook rightarrow
 
 \include{setup-listings}
 
 \begin{document}
 
 \maketitle
-%
+
 \tableofcontents
 
 \include{section-notation}
 \include{section-user-related-queries}
 \include{section-date-related-queries}
 \include{section-references}
+
+\printindex
 
 \end{document}

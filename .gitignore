@@ -7,3 +7,6 @@ tags
 *.out
 *.pdf
 *.fdb_latexmk
+*.idx
+*.ilg
+*.ind

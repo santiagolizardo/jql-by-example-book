@@ -8,7 +8,9 @@ The latest version of the book can be downloaded from here: [JQL by example book
 
 ## Contribute
 
-* Open pull requests to include more examples
+* Spread the word by ★ starring this repo on Github ★
+* Open [pull requests](https://github.com/santiagolizardo/jql-by-example-book/pulls) to include more JQL examples
+* Report typos and other [issues](https://github.com/santiagolizardo/jql-by-example-book/issues)
 
 ## License
 
