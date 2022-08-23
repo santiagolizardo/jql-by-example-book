@@ -1,0 +1,29 @@
+\newpage
+\chapter{Basic syntax}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\section{Operators}
+
+\begin{center}
+    \rowcolors{2}{LightCyan!85}{white}
+    \begin{tabular}{l c l}
+        Description         & Operator   & Example                                 \\
+        \hline\hline
+        EQUALS              & =          & project = CLI                           \\
+        NOT EQUALS          & !=         & issuetype != Bug                        \\
+        GREATER THAN        & >          & "Story Points[Number]" > 0              \\
+        GREATER THAN EQUALS & >=         & "Story Points[Number]" >= 5             \\
+        LESS THAN           & <          & "Story Points[Number]" < 21             \\
+        LESS THAN EQUALS    & <=         & "Story Points[Number]" <= 21            \\
+        IN                  & IN         & status IN (Todo, Doing)                 \\
+        NOT IN              & NOT IN     & status NOT IN (Done)                    \\
+        CONTAINS            & ~          & summary ~ "Refactor"                    \\
+        DOES NOT CONTAIN    & !~         & summary !~ "Report"                     \\
+        IS                  & IS         & fixVersion IS EMPTY                     \\
+        IS NOT              & IS NOT     & cvss IS NULL                            \\
+        WAS                 & WAS        & status WAS "Done"                       \\
+        WAS IN              & WAS IN     & project WAS IN (WEB, CLI)               \\
+        WAS NOT IN          & WAS NOT IN & assignee WAS NOT IN (Daniel, Sebastian) \\
+        WAS NOT             & WAS NOT    & priority WAS NOT "High"                 \\
+        CHANGED             & CHANGED    & status CHANGED FROM "Open" TO "Close"
+    \end{tabular}
+\end{center}

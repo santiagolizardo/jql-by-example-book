@@ -1,8 +1,10 @@
-\documentclass{book}
+\documentclass[notitlepage]{book}
+
+\include{git-info}
 
 \title{JQL (Jira Query Language) by example}
 \author{Santiago Lizardo}
-\date{\today}
+\date{Revision \GitTag\ - \today}
 
 \usepackage[utf8]{inputenc}
 \usepackage[default]{sourcecodepro}
@@ -10,11 +12,20 @@
 \usepackage{imakeidx}
 \makeindex[intoc]
 
-\usepackage[dvipsnames]{xcolor}   % for \textcolor
+\usepackage[pagestyles]{titlesec}
+\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Huge}
+\newpagestyle{mystyle}
+{\sethead[\thepage][][\chaptertitle]{}{}{\thepage}}
+\pagestyle{mystyle}
+
+\include{setup-headers}
+\include{setup-listings}
+
+\usepackage[dvipsnames,table]{xcolor}   % for \textcolor
 
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
-    pdftitle={JQL by example},
+    pdftitle={JQL by example}, 
     pdfauthor={Santiago Lizardo}
 }
 \urlstyle{same}
@@ -22,15 +33,17 @@
 \usepackage{sourcecodepro}
 \usepackage{amsmath}  % for \hook rightarrow
 
-\include{setup-listings}
-
 \begin{document}
-
+\pagestyle{fancy}
 \maketitle
 
 \tableofcontents
 
+\include{section-intro}
 \include{section-notation}
+
+\mainmatter
+\include{section-basic-syntax}
 \include{section-user-related-queries}
 \include{section-date-related-queries}
 \include{section-references}
