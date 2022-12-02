@@ -10,3 +10,12 @@
 status CHANGED TO "In peer review" BEFORE -2D AND NOT status CHANGED AFTER -2d AND status = "In peer review"
 \end{lstlisting}
 \end{small}
+
+
+\subsection*{List tickets that have a fix version added after certain date.}
+
+\begin{small}
+    \begin{lstlisting}[language=jql]
+    fixVersion CHANGED TO "Alpha" AFTER 2022-08-18
+    \end{lstlisting}
+\end{small}
